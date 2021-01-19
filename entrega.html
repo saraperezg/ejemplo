@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body style="background-color: pink;">
+   <center>
+   	<p>formulario</p>
+   	<form method="post" action="pag.html" style="background-color: pink;"></form>
+   	<p>nombre: <input type="text" name="n" /></p>
+   	<p>grado: <input type="text" name="n1" /></p>
+   	<p>materia: <input type="text" name="n2" /></p>
+   	<input type="submit" name="b1" value="enviar" onclick="location.href='pag.html'" onclick="function()">
+   	<input type="submit" name="b2" value="limpiar">
+   </center>
+   	<?php if (isset($_post['enviar'])) {
+         $n=$_post['n'];
+         $n1=$_post['n1'];
+         $n2=$_post['n2'];
+   		
+   	} php?>
+</body>
+</html>
